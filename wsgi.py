@@ -12,10 +12,6 @@ print(vals)
 
 @app.route('/',methods=['GET'])      
 def senddata():
-    
     return jsonify({'data':vals})
-    
-
-
 if __name__=='__main__':
     app.run(debug=True)
